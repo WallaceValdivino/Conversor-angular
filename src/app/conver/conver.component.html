@@ -1,0 +1,40 @@
+<div
+  class="position-absolute top-50 start-50 translate-middle bg-primary text-white text-center rounded p-5"
+>
+  <h1 class="text-white mb-4 pt-2">Conversor de moedas</h1>
+  <div class="row justify-content-center">
+
+      <h3 class="text-white">Digite o valor em real</h3>
+      <input class="rounded mb-4" id="valor1" type="number" [(ngModel)] = "valor1">
+
+
+
+      <h3 class="text-white">Digite a cotação do dólar</h3>
+      <input class="rounded mb-4" id="valordolar" type="number"  [(ngModel)] = "valordolar">
+
+
+
+      <h3 class="text-white">Digite a cotação da libra</h3>
+      <input class="rounded mb-4"id="valorlibra" type="number"  [(ngModel)] = "valorlibra">
+
+
+      <h3 class="text-white">Digite a cotação do euro</h3>
+      <input class="rounded mb-4" id="valoreuro" type="number"  [(ngModel)] = "valoreuro">
+
+</div>
+
+<div class="mt-5">
+  <button type="button" class="btn btn-warning btn-lg" (click)="operacao()">Converter</button>
+</div>
+<div>
+
+
+</div>
+<div class="mt-5">
+  <div>
+  <input class="rounded bg-secondary-subtle text-black fst-italic" id="resultadodolar" placeholder="Dolar" type="text"  [(ngModel)] = "resultadodolar" disabled>
+  <input class="rounded bg-secondary-subtle text-black fst-italic" id="resultadolibra" placeholder="Libra" type="text"  [(ngModel)] = "resultadolibra" disabled>
+  <input class="rounded bg-secondary-subtle text-black fst-italic" id="resultadoeuro" placeholder="Euro" type="text"  [(ngModel)] = "resultadoeuro" disabled>
+</div>
+</div>
+
